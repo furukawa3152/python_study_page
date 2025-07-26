@@ -502,6 +502,72 @@ print(python_book.introduce())
             </ul>
         </section>
 
+        <!-- API Explanation -->
+        <section class="slide">
+            <h2>🔌 APIとは？</h2>
+            <div style="text-align: left; max-width: 90%;">
+                <h3 style="color: #00796b; font-size: 1.8em; margin-bottom: 20px;">Application Programming Interface</h3>
+                <p style="font-size: 1.3em; line-height: 1.5; margin-bottom: 20px;">
+                    他のサービスやアプリケーションと通信するための「窓口」
+                </p>
+                
+                <div style="background-color: #f0f8ff; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+                    <h4 style="color: #00796b; font-size: 1.3em; margin-bottom: 15px;">📱 身近なAPIの例</h4>
+                    <ul style="font-size: 1.2em; line-height: 1.4;">
+                        <li><strong>天気予報API</strong> - 現在の天気や予報を取得</li>
+                        <li><strong>地図API</strong> - Google Maps、位置情報サービス</li>
+                        <li><strong>AI API</strong> - ChatGPT、画像認識、翻訳</li>
+                        <li><strong>SNS API</strong> - Twitter、Instagramの投稿</li>
+                        <li><strong>決済API</strong> - PayPal、Stripe</li>
+                    </ul>
+                </div>
+                
+                <div style="background-color: #fff3e0; padding: 15px; border-radius: 8px;">
+                    <h4 style="color: #d84315; font-size: 1.3em; margin-bottom: 15px;">💡 APIを使うメリット</h4>
+                    <ul style="font-size: 1.2em; line-height: 1.4;">
+                        <li>既存のサービスを再利用できる</li>
+                        <li>開発時間を短縮できる</li>
+                        <li>専門的な機能を簡単に利用できる</li>
+                        <li>データの最新性を保てる</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- HTTP Flow Explanation -->
+        <section class="slide">
+            <h2>🌐 HTTPのリクエスト／レスポンス</h2>
+            <div style="text-align: left; max-width: 90%;">
+                <h3 style="color: #00796b; font-size: 1.5em; margin-bottom: 20px;">Web通信の基本構造</h3>
+                
+                <div style="background-color: #f5f5f5; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+                    <h4 style="color: #00796b; font-size: 1.3em; margin-bottom: 15px;">📤 1. リクエスト（送信）</h4>
+                    <ul style="font-size: 1.1em; line-height: 1.4;">
+                        <li><strong>URL</strong> - どこに送るか（例：https://api.openai.com/v1/chat/completions）</li>
+                        <li><strong>メソッド</strong> - GET（取得）、POST（送信）、PUT（更新）、DELETE（削除）</li>
+                        <li><strong>ヘッダー</strong> - 認証情報、データ形式、ユーザーエージェントなど</li>
+                        <li><strong>ボディ</strong> - 送信するデータ（JSON形式が多い）</li>
+                    </ul>
+                </div>
+                
+                <div style="background-color: #e8f5e8; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+                    <h4 style="color: #2e7d32; font-size: 1.3em; margin-bottom: 15px;">📥 2. レスポンス（受信）</h4>
+                    <ul style="font-size: 1.1em; line-height: 1.4;">
+                        <li><strong>ステータスコード</strong> - 200（成功）、404（見つからない）、500（サーバーエラー）</li>
+                        <li><strong>ヘッダー</strong> - データ形式、サイズ、キャッシュ設定など</li>
+                        <li><strong>ボディ</strong> - 返ってきたデータ（JSON、HTML、画像など）</li>
+                    </ul>
+                </div>
+                
+                <div style="background-color: #fff8e1; padding: 15px; border-radius: 8px;">
+                    <h4 style="color: #f57c00; font-size: 1.2em; margin-bottom: 10px;">🔄 通信の流れ</h4>
+                    <p style="font-size: 1.1em; line-height: 1.4;">
+                        <strong>クライアント</strong> → リクエスト送信 → <strong>サーバー</strong> → レスポンス送信 → <strong>クライアント</strong>
+                    </p>
+                </div>
+            </div>
+        </section>
+
         <!-- Code Example -->
         <section class="slide">
             <h2>OpenAI API サンプルコード</h2>
